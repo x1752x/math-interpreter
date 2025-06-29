@@ -10,6 +10,8 @@ typedef enum {
     LEXEM_DIV,
     LEXEM_POW,
     LEXEM_SQRT,
+    LEXEM_LBRACKET,
+    LEXEM_RBRACKET,
     LEXEM_EOF,
     LEXEM_UNKNOWN
 } LexemType;
