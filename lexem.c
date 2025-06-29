@@ -5,8 +5,8 @@
 #include "tiny-regex-c/re.h"
 
 typedef enum {
-    LEXEM_INTEGER,
     LEXEM_FLOAT,
+    LEXEM_INTEGER,
     LEXEM_ADD,
     LEXEM_SUB,
     LEXEM_MUL,
@@ -20,8 +20,8 @@ typedef enum {
 } LexemType;
 
 char* patterns[] = {
-    "^[+-]?[0-9]+",
     "^[+-]?[0-9]+\\.[0-9]*",
+    "^[+-]?[0-9]+",
     "^\\+",
     "^\\-",
     "^\\*",

@@ -2,8 +2,8 @@
 #define LEXEM_H
 
 typedef enum {
-    LEXEM_INTEGER,
     LEXEM_FLOAT,
+    LEXEM_INTEGER,
     LEXEM_ADD,
     LEXEM_SUB,
     LEXEM_MUL,
