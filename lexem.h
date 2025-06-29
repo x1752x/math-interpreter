@@ -1,3 +1,6 @@
+#ifndef LEXEM_H
+#define LEXEM_H
+
 typedef enum {
     LEXEM_INTEGER,
     LEXEM_FLOAT,
@@ -19,3 +22,5 @@ typedef struct {
 Lexem get_next_lexem(char** string_ptr);
 
 Lexem* parse_lexems(char** string_ptr);
+
+#endif
