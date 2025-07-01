@@ -4,6 +4,7 @@
 #include <string.h>
 #include <malloc.h>
 #include <setjmp.h>
+#include <ctype.h>
 #include "lexem.h"
 #include "syntax.h"
 #include "interpreter.h"
@@ -17,6 +18,9 @@ void loop() {
             fprintf(stderr, "\nCould not read input\n");
             exit(1);
         }
+
+        while(isspace(*line)) line++;
+        if (*line == '\0') continue;
 
         Lexem* lexems;
         Lexem* RPN;
